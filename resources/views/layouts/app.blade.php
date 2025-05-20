@@ -44,14 +44,9 @@
                 </button>
 
                 <div class="collapse navbar-collapse " id="navbarNav">
+                   
                     <ul class="navbar-nav ml-auto align-items-center">
-                        <li class="nav-item"><a class="nav-link" href="{{ route('profile.edit') }}">Profile11</a></li>                        
-                    </ul>
-                    <ul class="navbar-nav ml-auto align-items-center">
-                        <li class="nav-item"><a class="nav-link" href="{{ route('profile.edit') }}">Profile11</a></li>                       
-                    </ul>
-                    <ul class="navbar-nav ml-auto align-items-center">
-                        <li class="nav-item"><a class="nav-link" href="{{ route('profile.edit') }}">Profile11</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ route('product.index') }}">Products</a></li>                       
                     </ul>
                </div>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">

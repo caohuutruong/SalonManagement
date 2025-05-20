@@ -75,3 +75,6 @@ background-color: #3874cf50
      /* Chữ in hoa */
     letter-spacing: 1px; /* Khoảng cách giữa các chữ */
 }
+.table-responsive {
+    overflow-x: auto;
+}
