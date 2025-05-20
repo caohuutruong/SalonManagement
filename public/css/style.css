@@ -1,0 +1,77 @@
+#save-all {
+    background-color: #3874cf50
+}
+
+#shareBtn {
+background-color: #3874cf50;
+padding: 10px;
+width: 100%;
+}
+/* btn2 share all btn */
+.btn2 {
+height: 48px;
+background-color: #3874cf50
+}
+
+/* css và script của profile.edit */
+.form-control {
+    border: 2px solid #007bff4f;
+    padding: 10px;
+}
+.img-thumbnail {
+    border-radius: 50%;
+    border: 2px solid #ddd;
+}  
+
+
+/* phần hover ở bảng */
+.editable {
+    position: relative;
+    padding-right: 40px;
+    transition: background-color 0.2s;
+}
+
+.editable:hover {
+    background-color: #f8f9fa; /* Màu nhạt khi hover */
+}
+
+.editable .edit-btn-2 {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    color: #0d6efd;
+    font-size: 1.33rem;
+    padding: 2px 5px;
+    cursor: pointer;
+    transition: opacity 0.8s;
+    opacity: 1;
+    display: none;
+}
+
+.editable:hover .edit-btn-2 {
+    display: inline-block;
+}
+
+.editable .edit-mode {
+    width: 90%;
+    display: none;
+    padding: 4px 8px;
+    font-size: 0.95rem;
+}
+
+
+/* editbtn */
+#editbtn {
+    background-color: #3874cf50;
+}
+.logo-text {
+    font-size: 20px;  /* Tăng kích thước chữ */
+    font-weight: bold; /* Làm chữ đậm */
+    font-family: 'Poppins', sans-serif; /* Font chữ hiện đại */
+    color:  #3874cfcc; /* Màu nổi bật */
+     /* Chữ in hoa */
+    letter-spacing: 1px; /* Khoảng cách giữa các chữ */
+}
