@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Models\Product;
+use App\Models\ProductLog;
 use Illuminate\Http\Request;
 
 class productController extends Controller
@@ -59,5 +60,11 @@ class productController extends Controller
         $product->delete();
 
         return redirect()->route('product.index')->with('success', 'Sản phẩm đã được xóa!');
+    }
+
+    public function showLogs()
+    {
+        $logs = ProductLog::orderBy('performed_at', 'desc')->paginate(20);
+        return view('products.productLogs', compact('logs'));
     }
 }

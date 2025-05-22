@@ -43,11 +43,18 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse " id="navbarNav">
-                   
-                    <ul class="navbar-nav ml-auto align-items-center">
-                        <li class="nav-item"><a class="nav-link" href="{{ route('product.index') }}">Products</a></li>                       
-                    </ul>
+                <div class="collapse navbar-collapse  " id="navbarNav" >
+                    <div class="navbar-nav ml-auto align-items-center">
+                        <div class="dropdown ">
+                        <button style="padding-left: 30px;" class="btn  dropdown-toggle nav-link" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Products
+                        </button>
+                        <ul class="dropdown-menu nav-item" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="{{ route('product.index') }}">Quản Lý Sản Phẩm</a></li>
+                            <li><a class="dropdown-item" href="{{route('product.logs')}}">Logs</a></li>
+                        </ul>
+                        </div>
+                    </div>
                </div>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav ml-auto align-items-center">
