@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 use App\Models\Product;
 use App\Models\ProductLog;
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\DB;
 class productController extends Controller
 {
     public function index(){
@@ -67,4 +67,27 @@ class productController extends Controller
         $logs = ProductLog::orderBy('performed_at', 'desc')->paginate(20);
         return view('products.productLogs', compact('logs'));
     }
+
+
+    // doanh thu
+    public function doanhthu(){
+        // Doanh thu hôm nay
+    $doanhThuHomNay = DB::table('customers')
+        ->whereDate('updated_at', now()->toDateString())
+        ->sum('price');
+
+    // Doanh thu tháng này
+    $doanhThuThangNay = DB::table('customers')
+        ->whereYear('updated_at', now()->year)
+        ->whereMonth('updated_at', now()->month)
+        ->sum('price');
+
+    // Doanh thu năm nay
+    $doanhThuNamNay = DB::table('customers')
+        ->whereYear('updated_at', now()->year)
+        ->sum('price');
+
+        return view('doanhthu', compact('doanhThuThangNay', 'doanhThuHomNay', 'doanhThuNamNay'));
+    }
+
 }

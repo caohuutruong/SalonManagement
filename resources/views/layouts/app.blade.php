@@ -55,7 +55,11 @@
                         </ul>
                         </div>
                     </div>
+                    <div class="navbar-nav ml-auto align-items-center">
+                        <a class="nav-link" href="/doanhthu">Doanh thu</a>
+                    </div>
                </div>
+               
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav ml-auto align-items-center">
                         <li class="nav-item">

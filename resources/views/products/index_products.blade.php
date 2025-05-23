@@ -80,7 +80,7 @@
                         <td>{{ $product->name }}</td>
                         <td>{{ $product->category }}</td>
                         <td>{{ $product->quantity }}</td>
-                        <td>{{ number_format($product->price, 2) }}₫</td>
+                        <td>{{ number_format($product->price) }}₫</td>
                         <td>{{ $product->description }}</td>
                         <td>
                             <button type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#editModal{{ $product->id }}">

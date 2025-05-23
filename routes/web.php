@@ -52,6 +52,7 @@ Route::middleware('auth') -> group(function () {
     Route::put('/products/{id}', [ProductController::class, 'update'])->name('products.update');
     Route::delete('/products/{id}', [ProductController::class, 'destroy'])->name('products.destroy');
     Route::get('/products/proLogs', [ProductController::class, 'showLogs'])->name('product.logs');
+    Route::get('/doanhthu', [ProductController::class, 'doanhthu'])->name('doanhthu');
 });
 
 
