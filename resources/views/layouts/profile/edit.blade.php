@@ -45,18 +45,17 @@
                     <label for="phone">Phone Number</label>
                     <input type="tel" name="phone" class="form-control" value="{{ old('phone', session('user')->phone ?? '') }}">
                 </div>
-                <!-- đổi mật khẩu -->
                 <div class="form-group">
                     <label for="current_password">Mật khẩu hiện tại</label>
-                    <input type="password" name="current_password" class="form-control" required>
+                    <input type="password" name="current_password" class="form-control">
                 </div>
                 <div class="form-group">
                     <label for="new_password">Mật khẩu mới</label>
-                    <input type="password" name="new_password" class="form-control" required>
+                    <input type="password" name="new_password" class="form-control">
                 </div>
                 <div class="form-group">
                     <label for="confirm_password">Xác nhận mật khẩu mới</label>
-                    <input type="password" name="new_password_confirmation" class="form-control" required>
+                    <input type="password" name="new_password_confirmation" class="form-control">
                 </div>
                 <div class="form-group">
                     <label for="avatar">Chọn ảnh đại diện</label>

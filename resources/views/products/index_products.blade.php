@@ -127,9 +127,9 @@
                             <div class="mb-3">
                                 <label for="product_category" class="form-label">Loại Sản Phẩm</label>
                                 <select class="form-select" name="product_category">
-                                    <option value="hair_tools" {{ $product->category == 'hair_tools' ? 'selected' : '' }}>Dụng cụ làm tóc</option>
-                                    <option value="hair_care" {{ $product->category == 'hair_care' ? 'selected' : '' }}>Mỹ phẩm chăm sóc tóc</option>
-                                    <option value="accessories" {{ $product->category == 'accessories' ? 'selected' : '' }}>Phụ kiện làm tóc</option>
+                                    <option value="Dụng cụ làm tóc" {{ $product->category == 'hair_tools' ? 'selected' : '' }}>Dụng cụ làm tóc</option>
+                                    <option value="Mỹ phẩm chăm sóc tóc" {{ $product->category == 'hair_care' ? 'selected' : '' }}>Mỹ phẩm chăm sóc tóc</option>
+                                    <option value="Phụ kiện làm tóc" {{ $product->category == 'accessories' ? 'selected' : '' }}>Phụ kiện làm tóc</option>
                                 </select>
                             </div>
 
