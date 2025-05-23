@@ -16,3 +16,5 @@
 - Blade template 
 - SQL Server
 - HTML/CSS/JavaScript + Bootstrap
+##  database
+--> https://github.com/caohuutruong/SalonManagement/blob/master/database.ipynb
